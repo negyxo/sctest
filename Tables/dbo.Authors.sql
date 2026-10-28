@@ -1,0 +1,17 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Authors] (
+		[AuthorId]      [int] IDENTITY(1, 1) NOT NULL,
+		[FirstName]     [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[LastName]      [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		CONSTRAINT [PK_Authors]
+		PRIMARY KEY
+		CLUSTERED
+		([AuthorId])
+	ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Authors] SET (LOCK_ESCALATION = TABLE)
+GO

@@ -2,7 +2,7 @@
 <DatabaseSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
   <Containment>NONE</Containment>
-  <DatabaseName>SCDemo_BookStore</DatabaseName>
+  <DatabaseName>SCTest</DatabaseName>
   <ExistsOnSourceControl>true</ExistsOnSourceControl>
   <ServerName>Q3V9FY04\SQLEXPRESS</ServerName>
   <ServerVersion>Sql2022</ServerVersion>

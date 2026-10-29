@@ -1,0 +1,16 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Currency] (
+		[CurrencyCode]     [char](3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[Name]             [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		CONSTRAINT [PK_Currency]
+		PRIMARY KEY
+		CLUSTERED
+		([CurrencyCode])
+	ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Currency] SET (LOCK_ESCALATION = TABLE)
+GO

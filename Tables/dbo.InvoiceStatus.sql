@@ -1,0 +1,16 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[InvoiceStatus] (
+		[StatusId]     [tinyint] NOT NULL,
+		[Name]         [nvarchar](30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		CONSTRAINT [PK_InvoiceStatus]
+		PRIMARY KEY
+		CLUSTERED
+		([StatusId])
+	ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[InvoiceStatus] SET (LOCK_ESCALATION = TABLE)
+GO

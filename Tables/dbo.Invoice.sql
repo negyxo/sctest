@@ -9,6 +9,7 @@ CREATE TABLE [dbo].[Invoice] (
 		[Amount]           [decimal](12, 2) NOT NULL,
 		[CurrencyCode]     [char](3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[StatusId]         [tinyint] NOT NULL,
+		[DueDate]          [date] NULL,
 		CONSTRAINT [PK_Invoice]
 		PRIMARY KEY
 		CLUSTERED

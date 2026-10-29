@@ -1,0 +1,15 @@
+{
+  "Committed": false,
+  "DeploymentOrder": 1,
+  "Description": "Sets DueDate on invoices created before the column existed",
+  "FullyQualifiedName": "dbo.Invoice",
+  "Name": "BackfillInvoiceDueDate",
+  "ObjectName": "Invoice",
+  "OldFullyQualifiedName": null,
+  "OrderOfExecution": 0,
+  "Schema": "dbo",
+  "Script": "-- Invoices created before DueDate existed get a due date 30 days after the invoice date.\r\nUPDATE dbo.Invoice\r\nSET DueDate = DATEADD(DAY, 30, InvoiceDate)\r\nWHERE DueDate IS NULL;\r\n",
+  "SqlObjType": "Table",
+  "Time": "2026-10-29T15:50:52",
+  "UniqueId": "1f5ba1ef-85c2-4a94-beab-ed43a1305d64"
+}
